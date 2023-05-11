@@ -9,6 +9,7 @@
 
 #define MAX_INPUT_SIZE 1024
 
+int is_interactive();
 void run_interactive_shell();
 void run_non_interactive_shell();
 void display_prompt();
@@ -17,6 +18,11 @@ char** split_input_by_semicolon(const char* input);
 int is_comment(const char* command);
 char* remove_comments(char* command);
 int is_logical_operator_present(const char* command);
+void handle_logical_operator(const char* command);
+void execute_command_with_logical_or(const char* command);
+void execute_command_with_logical_and(const char* command);
+char** split_command_by_logical_operator(const char* command, const char* operator);
+void execute_single_command(const char* command);
 void handle_logical_operator(const char* command);
 void execute_command(const char* command);
 int is_builtin_command(const char* command);
