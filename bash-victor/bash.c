@@ -1,4 +1,4 @@
-// HEADER FILE //
+// HEADER FILE
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,7 +32,7 @@ char** parse_command_for_arguments(const char* command);
 void execute_external_command(char** arguments, char** filenames);
 
 
-MAIN GROUP
+// MAIN GROUP
 
 int main() {
     if (is_interactive()) {
