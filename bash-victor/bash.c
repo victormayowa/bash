@@ -85,7 +85,7 @@ void display_prompt() {
 }
 
 void read_input(char* input) {
-    getline(&input, &MAX_INPUT_SIZE, stdin);
+    fgets(input, MAX_INPUT_SIZE, stdin);
     input[strcspn(input, "\n")] = '\0';
 }
 
